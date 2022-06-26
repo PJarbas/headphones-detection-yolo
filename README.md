@@ -19,6 +19,7 @@ Download the data running the following command in the `src` directory:
 Create the `train.txt` and `test.txt` files with random split, this files must be in the same directory that the `darknet.data` file
 
 ```bash
+   $ cd src
    $ python split_train_test.py ../data/images/ 
 ```
 
@@ -28,6 +29,7 @@ Create the `train.txt` and `test.txt` files with random split, this files must b
 
 * https://medium.com/geekculture/yolov4-darknet-installation-and-usage-on-your-system-windows-linux-8dec2cea6e81
 
+### Download the yolov4-tiny
 
 Get the yolov4-tiny.cfg and change the number of classes and the filters for the [conv] layers before the [yolo] layers 
 
