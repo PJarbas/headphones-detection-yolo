@@ -38,7 +38,7 @@ Get the yolov4-tiny.cfg and change the number of classes and the filters for the
 ### Train
 
 ```bash
-   $ darknet detector train yolo-cfg/darknet.data yolo-cfg/yolov4-tiny.cfg  
+   $ darknet detector train darknet.data yolo-cfg/yolov4-tiny.cfg  
 ```
 
 6. Give the correct path to the modelConfiguration and modelWeights files in object_detection_yolo.py and test any image or video for snowman detection, e.g.
