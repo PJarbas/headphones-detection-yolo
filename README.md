@@ -1,6 +1,6 @@
-Training YOLOv3 Object Detector - Snowman
 
-## Headphones object detection using Yolo
+
+## Headphones object detection using YoloV4
 
 This project aims to train a object detecion using custom number of classes (Headphones)
 
@@ -41,8 +41,5 @@ Get the yolov4-tiny.cfg and change the number of classes and the filters for the
    $ darknet detector train darknet.data yolo-cfg/yolov4-tiny.cfg  
 ```
 
-6. Give the correct path to the modelConfiguration and modelWeights files in object_detection_yolo.py and test any image or video for snowman detection, e.g.
-
-`python3 object_detection_yolo.py --image=snowmanImage.jpg`
 
 
