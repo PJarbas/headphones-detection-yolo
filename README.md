@@ -26,6 +26,7 @@ Create the `train.txt` and `test.txt` files with random split, this files must b
 
 ### Install YoloV4 Darknet:
 
+* https://github.com/AlexeyAB/darknet#how-to-compile-on-windows-using-vcpkg
 
 * https://medium.com/geekculture/yolov4-darknet-installation-and-usage-on-your-system-windows-linux-8dec2cea6e81
 
