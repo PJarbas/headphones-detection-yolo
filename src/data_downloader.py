@@ -19,7 +19,7 @@ from botocore.config import Config
     s3://open-images-dataset/test (36GB)
 """
 
-"usage: python data_downloader.py"
+ # usage: python data_downloader.py
 
 
 class DataDownloader:
@@ -31,8 +31,8 @@ class DataDownloader:
         
         self.create_paths()
         
-        self.get_meta_files()
-        exit()
+        # self.get_meta_files()
+        
         self.select_classes_from_meta_file()
         
         self.download_data()
@@ -98,8 +98,7 @@ class DataDownloader:
         # filter annotations by codes
         selected_annotations = annotations.loc[annotations['LabelName'].isin(code_list)]
 
-        selected_annotations = selected_annotations[["ImageID", "XMin", "XMax", "YMin", "YMax"]]
-        selected_annotations.index = range(selected_annotations.shape[0])
+        self.selected_annotations = selected_annotations[["ImageID", "XMin", "XMax", "YMin", "YMax"]]
 
         del annotations
 
@@ -117,7 +116,9 @@ class DataDownloader:
         # here we use the boto3 library
         s3 = boto3.client('s3', config=Config(signature_version=UNSIGNED))
 
-        for index, data in selected_annotations.iterrows():
+        # only 1 class
+        index = 0
+        for _, data in self.selected_annotations.iterrows():
             
             img = data["ImageID"]
             
@@ -132,7 +133,7 @@ class DataDownloader:
                 s3.download_fileobj('open-images-dataset', f"{self.run_mode}/{file_name}", f)
             
             # Write labels files
-            with open(f"{self.LABELS_DIR}/%s.txt"%(img),'a') as f:
+            with open(f"{self.JPG_IMAGES_DIR}/%s.txt"%(img),'a') as f:
                 
                 f.write(' '.join([str(index), str((float(xmax) + float(xmin))/2),
                                 str((float(ymax) + float(ymin))/2),

@@ -1,0 +1,7 @@
+[Project]
+classes = 1
+train = train.txt
+valid = test.txt
+names = class.names
+backup = backup/
+
