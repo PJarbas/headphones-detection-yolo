@@ -16,7 +16,7 @@ Download the data running the following command in the `src` directory:
 ```
 
 
-Create the `train.txt` and `test.txt` files with random split, this files must be in the same directory that the `darknet.data` file
+Create the `train.txt` and `test.txt` files with random split, these files must be in the same directory that the `darknet.data` file
 
 ```bash
    $ cd src
