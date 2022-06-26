@@ -2,7 +2,7 @@
 
 ## Headphones object detection using YoloV4
 
-This project aims to train a object detecion deep learning model using custom number of classes (Headphones)
+This project aims to train a object detecion deep learning model, using a custom number of classes (Headphones)
 
 
 ### Get started
@@ -24,7 +24,7 @@ Create the `train.txt` and `test.txt` files with random split, these files must 
 ```
 
 
-### Install YoloV4 Darknet:
+### Install YoloV4 Darknet with CUDA:
 
 * https://github.com/AlexeyAB/darknet#how-to-compile-on-windows-using-vcpkg
 
