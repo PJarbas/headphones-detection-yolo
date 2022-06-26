@@ -2,7 +2,7 @@
 
 ## Headphones object detection using YoloV4
 
-This project aims to train a object detecion using custom number of classes (Headphones)
+This project aims to train a object detecion deep learning model using custom number of classes (Headphones)
 
 
 ### Get started
