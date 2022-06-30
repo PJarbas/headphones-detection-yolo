@@ -2,7 +2,6 @@
 
 ## Headphones object detection using YoloV4
 
-Solarized dark             |  Solarized dark           |  Solarized dark 
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](icon/det.png)          | ![](icon/det1.png)        |  ![](icon/det2.png)
 
