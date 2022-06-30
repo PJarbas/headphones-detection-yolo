@@ -54,5 +54,10 @@ Download file with the first 29-convolutional layers of yolov4-tiny: https://git
 
 ```
 
+### Run Inference in python
 
+```bash
+   $ cd src/
+   $ python main.py --image your_image.png
 
+```
