@@ -33,14 +33,18 @@ Create the `train.txt` and `test.txt` files with random split, these files must 
 
 Get the yolov4-tiny.cfg and change the number of classes and the filters for the [conv] layers before the [yolo] layers 
 
+* check the documentation to see all the parameters to be changed: https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects
+
 ```bash
-   $ wget https://github.com/AlexeyAB/darknet/blob/master/cfg/yolov4-tiny.cfg
+   $ wget https://github.com/AlexeyAB/darknet/blob/master/cfg/yolov4-tiny-custom.cfg
 ```
 
-### Train
+### Train using pre-trained weights
+
+Download file with the first 29-convolutional layers of yolov4-tiny: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.conv.29
 
 ```bash
-   $ darknet detector train darknet.data yolo-cfg/yolov4-tiny.cfg  
+   $ darknet.exe detector train darknet.data yolo-cfg/yolov4-tiny-custom.cfg yolov4-tiny.conv.29
 ```
 
 
