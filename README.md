@@ -2,6 +2,11 @@
 
 ## Headphones object detection using YoloV4
 
+Solarized dark             |  Solarized dark           |  Solarized dark 
+:-------------------------:|:-------------------------:|:-------------------------:
+![](icon/det.png)          | ![](icon/det1.png)        |  ![](icon/det2.png)
+
+
 This project aims to train a object detecion deep learning model, using a custom number of classes (Headphones)
 
 
